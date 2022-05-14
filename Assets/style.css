@@ -8,12 +8,13 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: white;
+    position: static;
+    top: 0;
+
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    background-color: aliceblue;
 }
 
 header nav ul li a {
@@ -48,19 +49,26 @@ header nav ul li {
     width: 300px;
     border: 10px solid lightgray;
     margin-left: 25px;
+    position: relative;
+    left: 20px
 }
 
 main {
-    display: block;
-    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+}
+
+.text {
+    position: relative;
+    bottom: 350px;
+    left: 400px;
 }
 
 h2 {
     color:black;
     display: block;
     font-size: 32px;
+    text-align: center;
 }
 
 section footer ul li {
@@ -71,4 +79,17 @@ section footer ul li {
 section footer ul li a {
     color: blue;
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 992px) {
+    header {
+        background-color: #fcc203
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-color:#c9523a;
+    }
 }
