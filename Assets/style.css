@@ -81,6 +81,8 @@ main {
     font-family: var(--font-serif);
     font-size: 16px;
     line-height: 1.5;
+    max-width: 96%;
+    margin: 2% auto;
 }
 
 main article section + p {
@@ -90,8 +92,9 @@ main article section + p {
 
 .text {
     position: relative;
-    text-indent: 35%;
+    left: 450px;
     bottom: 350px;
+    text-indent: 4%;
 }
 
 h2 {
@@ -103,11 +106,15 @@ h2 {
 section footer ul li {
     display: inline-block;
     margin-inline-start: 150px;
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
 }
 
 section footer ul li a {
     color: blue;
     text-decoration: none;
+    font-size: 24px;
 }
 
 
