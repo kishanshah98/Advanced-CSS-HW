@@ -1,37 +1,36 @@
+:root {
+    --font-serif: Georgia, 'Times New Roman', Times, serif;
+}
+
 * {
     box-sizing: border-box;
+
 }
 
 header {
     padding: 5px;
     position: relative;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 0;
+    font-family: var(--font-serif);
     background-color: #2a607c;
     color: white;
-    position: static;
-    top: 0;
-
 }
 
 body {
     background-color: aliceblue;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 h1 {
     display: inline-block;
-    font-size: 36px;
+    font-size: 250%;
+
 }
 
 header nav {
     margin-right: 20px;
     padding-top: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-serif);
     font-size: 24px;
 }
 
@@ -44,31 +43,54 @@ header nav ul li {
     margin-left: 25px;
 }
 
+header nav ul li::before {
+    font-family: Impact;
+    content:'\27A4';
+    color: black;
+    margin-right: 5px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .portrait {
     height: 400px;
     width: 300px;
     border: 10px solid lightgray;
     margin-left: 25px;
     position: relative;
-    left: 20px
+    left: 40px
 }
 
 main {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-family: var(--font-serif);
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .text {
     position: relative;
+    text-indent: 35%;
     bottom: 350px;
-    left: 400px;
 }
 
 h2 {
     color:black;
     display: block;
     font-size: 32px;
-    text-align: center;
 }
 
 section footer ul li {
