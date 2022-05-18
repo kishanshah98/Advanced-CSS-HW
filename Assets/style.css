@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: aliceblue;
+    margin: 0;
+}
+
 header {
     padding: 5px;
     position: relative;
@@ -13,11 +18,9 @@ header {
     font-family: var(--font-serif);
     background-color: #2a607c;
     color: white;
-}
-
-body {
-    background-color: aliceblue;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 h1 {
@@ -59,10 +62,12 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+main {
+    font-family: var(--font-serif);
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 96%;
+    margin: 2% auto;
 }
 
 .about-container {
@@ -70,13 +75,6 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.about-text {
-    width: 90%;
-    padding: 40px;
-    text-indent: 7%;
-    color: black
 }
 
 .portrait {
@@ -88,12 +86,11 @@ header {
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
-main {
-    font-family: var(--font-serif);
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 96%;
-    margin: 2% auto;
+.about-text {
+    width: 90%;
+    padding: 40px;
+    text-indent: 7%;
+    color: black;
 }
 
 h2 {
