@@ -1,16 +1,20 @@
+/* Declaration of variable for font-family */
 :root {
     --font-serif: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Applies to entire code */
 * {
     box-sizing: border-box;
 }
 
+/* Attributes for body of the code */
 body {
     background-color: aliceblue;
     margin: 0;
 }
 
+/* Flex properties and styling of the header */
 header {
     padding: 5px;
     position: relative;
@@ -23,11 +27,13 @@ header {
     justify-content: space-between;
 }
 
+/* Properties for h1 in the header */
 h1 {
     display: inline-block;
     font-size: 250%;
 }
 
+/* Parent properties for the nav tools in the header */
 header nav {
     margin-right: 20px;
     padding-top: 20px;
@@ -36,32 +42,38 @@ header nav {
     font-size: 24px;
 }
 
+/* Gets rid of the underline for the nav section */
 header nav ul {
     list-style-type: none;
 }
 
+/* Makes the list in the navigation in a row and spaces them out */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Creates the arrow before the links in the header */
 header nav ul li::before {
     font-family: Impact;
-    content:'\27A4';
+    content: '\27A4';
     color: white;
     margin-right: 5px;
 }
 
+/* Shows how the links appear in the header */
 header nav ul li a {
     color: white;
     text-decoration: none;
 }
 
+/* Makes the links in the header change attributes when hovered over */
 header nav ul li a:hover {
     color: blue;
     text-decoration: underline;
 }
 
+/* General properties for the main element */
 main {
     font-family: var(--font-serif);
     font-size: 16px;
@@ -70,6 +82,7 @@ main {
     margin: 2% auto;
 }
 
+/* Flex properties for the About Me section */
 .about-container {
     display: flex;
     flex-direction: row;
@@ -77,6 +90,7 @@ main {
     justify-content: center;
 }
 
+/* Attributes of the image of myself */
 .portrait {
     height: 400px;
     width: 300px;
@@ -86,6 +100,7 @@ main {
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
+/* Attributes of the paragraph text in the About Me section */
 .about-text {
     width: 90%;
     padding: 40px;
@@ -93,12 +108,14 @@ main {
     color: black;
 }
 
+/* Properties of each h2 in the page - About Me, Work, and Contact Information */
 h2 {
-    color:black;
+    color: black;
     display: block;
     font-size: 32px;
 }
 
+/* Flex properties for the Work section */
 .work-container {
     display: flex;
     flex-wrap: wrap;
@@ -106,10 +123,12 @@ h2 {
     justify-content: center;
 }
 
+/* Margin edit for the 3 images to space them out*/
 .work-item {
     margin: 10px;
 }
 
+/* Sizing and positions of the Work images/links */
 .work-item div {
     background-size: cover;
     background-position: center;
@@ -118,6 +137,7 @@ h2 {
     position: relative;
 }
 
+/* Allows background image of project 1 to show along with sizing adjustments */
 #work-1 {
     background-image: url('./images/Refactor\ Website.png');
     background-position: top;
@@ -125,14 +145,17 @@ h2 {
     width: 400px;
 }
 
+/* Allows background image of project 2 to show */
 #work-2 {
     background-image: url('https://via.placeholder.com/150');
 }
 
+/* Allows background image of project 3 to show */
 #work-3 {
     background-image: url('https://via.placeholder.com/150');
 }
 
+/* Properties of h3 inside the Work images */
 .work-item div h3 {
     position: absolute;
     bottom: 10px;
@@ -142,6 +165,7 @@ h2 {
     margin: 0;
 }
 
+/* Adding flex properties for the contact information list */
 .contact-list {
     display: flex;
     flex-wrap: wrap;
@@ -149,18 +173,20 @@ h2 {
     justify-content: center;
 }
 
+/* Spaces the list in the footer out and sorts them in a row */
 section footer ul li {
     display: inline-block;
     margin: 0 5%;
 }
 
+/* Properties of the links in the footer */
 section footer ul li a {
     color: blue;
     text-decoration: none;
     font-size: 24px;
 }
 
-
+/* Media query changing the background-color of the header and width of the text in the About Me section depending on the size of the screen */
 @media (min-width: 750px) {
     .about-text {
         width: 50%;
@@ -175,6 +201,6 @@ section footer ul li a {
 
 @media screen and (max-width: 768px) {
     header {
-        background-color:#c9523a;
+        background-color: #c9523a;
     }
 }
