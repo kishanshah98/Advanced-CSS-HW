@@ -147,7 +147,7 @@ h2 {
 
 /* Allows background image of project 2 to show */
 #work-2 {
-    background-image: url('https://via.placeholder.com/150');
+    background-image: url('./images/project1-img.png');
 }
 
 /* Allows background image of project 3 to show */
