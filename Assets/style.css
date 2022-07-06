@@ -152,7 +152,7 @@ h2 {
 
 /* Allows background image of project 3 to show */
 #work-3 {
-    background-image: url('https://via.placeholder.com/150');
+    background-image: url('./images/chirp-mg.png');
 }
 
 /* Properties of h3 inside the Work images */
