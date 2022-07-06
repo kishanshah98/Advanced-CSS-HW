@@ -148,11 +148,15 @@ h2 {
 /* Allows background image of project 2 to show */
 #work-2 {
     background-image: url('./images/project1-img.png');
+    height: 300px;
+    width: 300px;
 }
 
 /* Allows background image of project 3 to show */
 #work-3 {
     background-image: url('./images/chirp-mg.png');
+    height: 300px;
+    width: 300px;
 }
 
 /* Properties of h3 inside the Work images */
